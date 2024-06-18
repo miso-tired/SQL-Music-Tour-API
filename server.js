@@ -8,7 +8,7 @@ const sequelize = new Sequelize({
     storage: process.env.PG_URI,
     dialect: 'postgres',
     username: 'postgres',
-    password: 'PartyCaseGoals85!'
+    password: process.env.DB_PASSWORD
   })
   
 // CONFIGURATION / MIDDLEWARE
